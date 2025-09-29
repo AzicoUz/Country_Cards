@@ -120,9 +120,7 @@ p {
     background-color: rgba(0, 0, 0, 0.788);
 }
 
-/* -------- RESPONSIVE -------- */
 
-/* Planshetlar (≤1024px) */
 @media (max-width: 1024px) {
     .container {
         width: 95%;
@@ -135,7 +133,6 @@ p {
     }
 }
 
-/* Telefonlar (≤768px) */
 @media (max-width: 768px) {
     .filterBox {
         flex-direction: column;
@@ -149,7 +146,6 @@ p {
     }
 }
 
-/* Juda kichik ekranlar (≤480px) */
 @media (max-width: 480px) {
     h2 {
         font-size: 20px;
@@ -162,4 +158,5 @@ p {
         padding: 8px 15px;
     }
 }
+
 
