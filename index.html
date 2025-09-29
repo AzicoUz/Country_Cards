@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            
+            <h1 class="title">Country Information</h1>
+                <span class="darkMode">
+                    <img class="darkModeIcon" src="./img/moon.png" alt="moon" id="moon">
+                    <img class="darkModeIcon" src="./img/sun.png" alt="sun" id="sun">
+                </span>
+            <div class="filterBox">
+                <select name="region" id="region">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="">All</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+                <input type="text" id="search" placeholder="Search for a country...">
+                <button id="sortAZ">A-Z</button>
+            </div>
+        </div>
+        <div class="countryBox">
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

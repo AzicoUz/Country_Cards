@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+.container {
+    position: relative;
+    width: 1400px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.countryBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.country {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.country:hover {
+    transform: translateY(-10px);
+}
+
+.flag {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+h2 {
+    padding: 10px 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.filterBox {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#region, #search, #sortAZ {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+#search {
+    width: 250px;
+}
+
+.darkMode {
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.darkModeIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+#moon {
+    display: none;
+}
+
+.body {
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+/* -------- RESPONSIVE -------- */
+
+/* Planshetlar (≤1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+    .country {
+        width: 45%;
+    }
+    #search {
+        width: 200px;
+    }
+}
+
+/* Telefonlar (≤768px) */
+@media (max-width: 768px) {
+    .filterBox {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .country {
+        width: 100%;
+    }
+    #search {
+        width: 100%;
+    }
+}
+
+/* Juda kichik ekranlar (≤480px) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #region, #search, #sortAZ {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
